@@ -5,17 +5,21 @@ A Python console application for recording, analyzing and visualizing personal e
 ## Features
 
 - Add expenses with amount, category and date.
+- Edit and delete expense records.
 - Store data locally in JSON format.
-- Display all recorded expenses in a formatted table.
+- View expenses in formatted tables.
 - Analyze spending by category.
-- Generate a report for the current month.
-- Visualize monthly spending with pie and bar charts.
-- Validate amounts, categories and dates.
+- Generate monthly reports.
+- Filter expenses by category and date range.
+- Export expense data to CSV.
+- Visualize monthly spending with charts.
+- Validate user input.
 
 ## Tech Stack
 
 - Python 3.11+
 - JSON
+- CSV
 - pathlib
 - tabulate
 - Matplotlib
@@ -37,27 +41,7 @@ pip install -r requirements.txt
 python expenses.py
 ```
 
-The application creates `expenses.json` automatically when the first expense is saved. Local expense data is ignored by Git.
-
-## Usage
-
-The main menu provides:
-
-1. Add an expense
-2. View all expenses
-3. Analyze expenses by category
-4. Generate a monthly report
-5. Display expense charts
-6. Exit
-
-Example data:
-
-```text
-Date        Category       Amount
-2026-09-01  Food           250.00
-2026-09-02  Transport       80.00
-2026-09-03  Entertainment  300.00
-```
+The application creates `expenses.json` automatically. Local financial data is ignored by Git.
 
 ## Testing
 
@@ -67,12 +51,10 @@ pytest
 
 ## Planned Improvements
 
-- Edit and delete expenses.
-- Date-range filtering.
-- CSV export.
 - Monthly budgets and spending limits.
 - Separate application, storage and reporting modules.
-- More unit tests and CI checks.
+- More comprehensive unit tests.
+- CI quality checks.
 
 ## License
 
